@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React app powered by the API from ice and fire
 
 ## Available Scripts
 
