@@ -23,7 +23,7 @@ const MainPage = ()=> {
     
         return (
             <div>
-                
+                <h1>Houses of the seven kingdoms</h1>
                 {houses && houses.map((houseName,index) => {
                     return (
                         <div className='row'>

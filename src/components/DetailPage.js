@@ -20,6 +20,8 @@ import React, { useState, useEffect} from 'react'
             <div>
             {
                 houseInfo && Object.entries(houseInfo).map(([key, value]) => {
+                    if (key==='name')
+                        return (<h2>Details of {value}</h2>)
                     if (key==='url' || value=='')
                         return;
                     return (
