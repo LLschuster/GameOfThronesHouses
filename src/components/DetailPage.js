@@ -1,27 +1,21 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect} from 'react'
 
- class DetailPage extends Component {
-     constructor(props) {
-         super(props);
-         this.state = {
-             houseInfo: []
-         }
-     }
-    async GetHouseData(houseIndex){
+ const DetailPage = (props) =>{
+    const [houseInfo, setHouseInfo] = useState([]);
+    
+    async function GetHouseData(houseIndex){
         let fetchHousesData = await fetch(`https://www.anapioficeandfire.com/api/houses/${houseIndex}`);
         let housesDataJson = await fetchHousesData.json();
         return housesDataJson;
     }
-    componentDidMount(){
-        let houseIndex = this.props.match.params.house;
-         this.GetHouseData(houseIndex).then(data=> {
-            this.setState({houseInfo: data})
+    useEffect(()=>{
+        let houseIndex = props.match.params.house;
+         GetHouseData(houseIndex).then(data=> {
+            setHouseInfo(data);
             console.log(data);
         });
         
-    }
-    render() {
-        let houseInfo = this.state.houseInfo;
+    },[])
         return (
             <div>
             {
@@ -29,15 +23,13 @@ import React, { Component } from 'react'
                     if (key==='url' || value=='')
                         return;
                     return (
-                       
                         <h4 className='infoItem'>{key} : {value}</h4>
-                    
                     )
                 })
             }
             </div>
         )
     }
-}
+
 
 export default DetailPage
