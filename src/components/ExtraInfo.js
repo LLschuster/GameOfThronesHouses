@@ -4,7 +4,7 @@ import React from 'react'
 const ExtraInfo = (props) => {
     return (
         <>
-            <p>{props && props.info}</p>
+            <h2>{props && props.info}</h2>
         </>
     )
 }

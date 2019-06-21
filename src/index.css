@@ -25,5 +25,9 @@ code {
 
 .infoItem {
   margin-left: 5%;
-  
+  font-size: 14pt;
+}
+
+.details-card {
+  width: 100%;
 }
