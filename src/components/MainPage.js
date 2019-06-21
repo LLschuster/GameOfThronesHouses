@@ -6,11 +6,9 @@ const MainPage = ()=> {
     useEffect(() => {
         let housesName = [];
         GetHousesData().then((data) => {
-            console.log(data);
              data.map((house) => {
                 housesName.push(house.name);
             })
-            console.log(housesName);
             setHouses(housesName);
         });
     },[])

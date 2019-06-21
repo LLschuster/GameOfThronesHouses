@@ -1,0 +1,1 @@
+export const fetchUrl = 'https://www.anapioficeandfire.com/api/houses/';
