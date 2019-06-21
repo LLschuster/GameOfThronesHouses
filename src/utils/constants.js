@@ -1,1 +1,1 @@
-export const fetchUrl = 'https://www.anapioficeandfire.com/api/houses/';
+export const allHousesUrl = 'https://www.anapioficeandfire.com/api/houses/';

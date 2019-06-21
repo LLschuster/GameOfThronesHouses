@@ -4,3 +4,8 @@ export  async function FetchData(url, houseIndex=null){
     let dataJson = await fetchData.json();
     return dataJson;
 }
+
+export function CheckIfIsUrl(stringToCheck)
+{
+    return stringToCheck.includes('http');
+}

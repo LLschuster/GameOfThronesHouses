@@ -1,10 +1,10 @@
 import React, { useState, useEffect} from 'react'
-import {fetchUrl} from '../utils/constants'
-import {FetchData} from '../utils/functions'
-import { async } from 'q';
+import {allHousesUrl} from '../utils/constants'
+import {FetchData, CheckIfIsUrl} from '../utils/functions'
 import ExtraInfo from './ExtraInfo';
 
  const DetailPage = (props) =>{
+
     const [houseInfo, setHouseInfo] = useState([]);
     const [extraInfo, setExtraInfo] = useState([]);
     
@@ -14,15 +14,13 @@ import ExtraInfo from './ExtraInfo';
     }
 
    async function handleExtraData(url){
-        console.log(url);
-        let extra = await FetchData(url).then(data=>{
-            console.log(data.name);
+         await FetchData(url).then(data=>{
             setExtraInfo(data.name)
         });
     }
     useEffect(()=>{
         let houseIndex = props.match.params.house;
-         GetHouseData(fetchUrl,houseIndex).then(data=> {
+         GetHouseData(allHousesUrl,houseIndex).then(data=> {
             setHouseInfo(data);
             console.log(data);
         });
@@ -36,11 +34,7 @@ import ExtraInfo from './ExtraInfo';
                         return (<h2>Details of {value}</h2>)
                     if (key==='url' || value=='' || key==='swornMembers')
                         return;
-                    if (key==='overlord')
-                        return (<button onClick={()=>handleExtraData(value)}>show {key}</button>)
-                    if (key==='currentLord')
-                        return (<button onClick={()=>handleExtraData(value)}>show {key}</button>)
-                    if (key==='heir')
+                    if (CheckIfIsUrl(value))
                         return (<button onClick={()=>handleExtraData(value)}>show {key}</button>)
                     return (
                         <h4 className='infoItem'>{key} : {value}</h4>

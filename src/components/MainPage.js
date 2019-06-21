@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
+import {allHousesUrl} from '../utils/constants'
+import {FetchData} from '../utils/functions'
 
 const MainPage = ()=> {
     const [houses, setHouses] = useState([]);
+    
     useEffect(() => {
         let housesName = [];
         GetHousesData().then((data) => {
@@ -14,9 +17,8 @@ const MainPage = ()=> {
     },[])
 
     async function GetHousesData(){
-        let fetchHousesData = await fetch('https://www.anapioficeandfire.com/api/houses');
-        let housesDataJson = await fetchHousesData.json();
-        return housesDataJson;
+        let houses = FetchData(allHousesUrl);
+        return houses;
     }
     
         return (
