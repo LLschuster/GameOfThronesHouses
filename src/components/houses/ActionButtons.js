@@ -10,7 +10,6 @@ const ActionButtons = (props) => {
     })}
     </div>
     )
-    //return (<button className='waves-effect waves-teal btn-flat' onClick={()=>handleExtraData(value)}>show {key}</button>)
 }
 
 export default ActionButtons
