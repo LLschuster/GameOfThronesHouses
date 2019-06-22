@@ -1,8 +1,10 @@
+
 React app powered by the API from ice and fire
 
-## Available Scripts
 
+## Available Scripts
 In the project directory, you can run:
+
 
 ### `npm install`
 
