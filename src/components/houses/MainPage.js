@@ -17,8 +17,11 @@ const MainPage = ()=> {
     },[])
 
     async function GetHousesData(){
-        let houses = FetchData(allHousesUrl);
-        return houses;
+        try {
+        return FetchData(allHousesUrl);
+        } catch(err){
+            alert(err);
+        }
     }
     
         return (
