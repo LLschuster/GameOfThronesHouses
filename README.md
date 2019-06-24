@@ -1,7 +1,7 @@
 
 React app powered by the API from ice and fire
 
-List the houses of the seven kingdoms.
+List the houses of the seven kingdoms.<br>
 When clicking one of them, a detail page is showed.
 
 
