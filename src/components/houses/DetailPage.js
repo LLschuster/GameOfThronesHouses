@@ -5,7 +5,7 @@ const ExtraInfo = React.lazy(()=> import('./ExtraInfo'));
 const ActionButtons = React.lazy(()=> import('./ActionButtons'));
 
  const DetailPage = (props) =>{
-
+    
     const [houseInfo, setHouseInfo] = useState([]);
     const [extraInfo, setExtraInfo] = useState('');
     const [actionButton, setActionButton] = useState([]);
@@ -19,6 +19,7 @@ const ActionButtons = React.lazy(()=> import('./ActionButtons'));
         }
     }
 
+    //
    async function handleExtraData(url){
        try {
          await FetchData(url).then(data=>{
@@ -28,9 +29,9 @@ const ActionButtons = React.lazy(()=> import('./ActionButtons'));
         alert(err);
         }
     }
-
+    //components did mount or update function
     useEffect(()=>{
-        let houseIndex = props.match.params.house;
+        let houseIndex = props.match.params.house; 
         let actionButtons  = [];
 
          GetHouseData(allHousesUrl,houseIndex).then(data=> {
