@@ -1,6 +1,9 @@
 
 React app powered by the API from ice and fire
 
+List the houses of the seven kingdoms.
+When clicking one of them, a detail page is showed.
+
 
 ## Available Scripts
 In the project directory, you can run:
