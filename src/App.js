@@ -1,8 +1,8 @@
 import React from 'react';
-import MainPage from './components/MainPage';
-import DetailPage from './components/DetailPage';
+import MainPage from './components/houses/MainPage';
+import DetailPage from './components/houses/DetailPage';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
-import Navbar from './components/Navbar';
+import Navbar from './components/shared/Navbar';
 
 
 function App() {
