@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
     <nav>
     <div className="nav-wrapper teal">
-      <Link to='/' className="brand-logo ">GOT API</Link>
+      <Link to='GameOfThronesHouses/' className="brand-logo ">GOT API</Link>
     </div>
   </nav>
     )

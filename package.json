@@ -1,6 +1,6 @@
 {
   "name": "got-houses",
-  "homepage":"https://llschuster.github.io/GameOfThronesHouses/",
+  "homepage":"https://llschuster.github.io/GameOfThronesHouses/index",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

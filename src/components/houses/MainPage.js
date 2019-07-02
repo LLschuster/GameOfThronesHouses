@@ -31,7 +31,7 @@ const MainPage = ()=> {
                     return (
                         <div className='row' key={index}>
                             <div className='col s12 m6'>
-                            <Link style={{textDecoration:'none'}} to={`/house/${index+1}`} >
+                            <Link style={{textDecoration:'none'}} to={`GameOfThronesHouses/house/${index+1}`} >
                                 <div className='card white teal-text' >
                                    <span className='card-title' >{houseName}</span>
                                </div>
