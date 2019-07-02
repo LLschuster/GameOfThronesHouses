@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/GameOfThronesHouses/index/precache-manifest.1b6b4dd333f9588e2b8c4be4c5d042a7.js"
+  "/GameOfThronesHouses/index/precache-manifest.2da03d735e3848740221a52eacb221ad.js"
 );
 
 self.addEventListener('message', (event) => {
