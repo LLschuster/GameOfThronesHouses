@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{34:function(e,a,n){"use strict";n.r(a);var t=n(0),c=n.n(t);a.default=function(e){var a=e.actions;return c.a.createElement("div",{className:"card-action"},a&&a.map(function(e,a){return c.a.createElement("button",{className:"waves-effect waves-teal btn-flat",onClick:e.onclick,key:a},"show ",e.key)}))}}}]);
+//# sourceMappingURL=3.068b7b91.chunk.js.map
