@@ -7,7 +7,7 @@ import Navbar from './components/shared/Navbar';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/GameOfThronesHouses'>
     <Navbar/>
       <div className="App">
           <Switch>
