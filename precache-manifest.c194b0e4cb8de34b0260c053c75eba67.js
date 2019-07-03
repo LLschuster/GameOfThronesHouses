@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d6595282df396524577aac35a8ffe85b",
+    "revision": "63d6274c336dc4971ac1ed29fa60b678",
     "url": "/GameOfThronesHouses/index.html"
   },
   {
-    "revision": "47126733494cf861cb48",
+    "revision": "00cb14c004b0284bfa3e",
     "url": "/GameOfThronesHouses/static/css/main.1ecd80b8.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/GameOfThronesHouses/static/js/4.c68cac17.chunk.js"
   },
   {
-    "revision": "47126733494cf861cb48",
-    "url": "/GameOfThronesHouses/static/js/main.1a082088.chunk.js"
+    "revision": "00cb14c004b0284bfa3e",
+    "url": "/GameOfThronesHouses/static/js/main.8dda8d00.chunk.js"
   },
   {
     "revision": "dec9c63b2d95fc4c5a04",
