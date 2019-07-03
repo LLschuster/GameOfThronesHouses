@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/GameOfThronesHouses/static/css/main.1ecd80b8.chunk.css",
-    "main.js": "/GameOfThronesHouses/static/js/main.8dda8d00.chunk.js",
-    "main.js.map": "/GameOfThronesHouses/static/js/main.8dda8d00.chunk.js.map",
+    "main.js": "/GameOfThronesHouses/static/js/main.25c2e987.chunk.js",
+    "main.js.map": "/GameOfThronesHouses/static/js/main.25c2e987.chunk.js.map",
     "runtime~main.js": "/GameOfThronesHouses/static/js/runtime~main.bd21d0ef.js",
     "runtime~main.js.map": "/GameOfThronesHouses/static/js/runtime~main.bd21d0ef.js.map",
     "static/js/2.48e9bc64.chunk.js": "/GameOfThronesHouses/static/js/2.48e9bc64.chunk.js",
@@ -12,7 +12,7 @@
     "static/js/4.c68cac17.chunk.js": "/GameOfThronesHouses/static/js/4.c68cac17.chunk.js",
     "static/js/4.c68cac17.chunk.js.map": "/GameOfThronesHouses/static/js/4.c68cac17.chunk.js.map",
     "index.html": "/GameOfThronesHouses/index.html",
-    "precache-manifest.c194b0e4cb8de34b0260c053c75eba67.js": "/GameOfThronesHouses/precache-manifest.c194b0e4cb8de34b0260c053c75eba67.js",
+    "precache-manifest.a94b96364a8c7f252d7d07ec86d83dc7.js": "/GameOfThronesHouses/precache-manifest.a94b96364a8c7f252d7d07ec86d83dc7.js",
     "service-worker.js": "/GameOfThronesHouses/service-worker.js",
     "static/css/main.1ecd80b8.chunk.css.map": "/GameOfThronesHouses/static/css/main.1ecd80b8.chunk.css.map"
   }
